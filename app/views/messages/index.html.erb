@@ -1,0 +1,16 @@
+<div style="font-family: sans-serif; max-width: 500px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+  <h2>Messages</h2>
+
+  <% if @messages.any? %>
+    <ul>
+      <% @messages.each do |message| %>
+        <li style="margin-bottom: 10px;">
+          <strong><%= message.content %></strong>
+          <small style="color: #666; margin-left: 10px;"><%= message.created_at.strftime("%I:%M %p") if message.created_at %></small>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>No messages yet.</p>
+  <% end %>
+</div>

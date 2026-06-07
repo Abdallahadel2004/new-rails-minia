@@ -3,13 +3,13 @@
 one:
   name: MyString
   dob: 2026-06-07
-  email: MyString
+  email: user1@example.com
   phone_number: MyString
   address: MyString
 
 two:
   name: MyString
   dob: 2026-06-07
-  email: MyString
+  email: user2@example.com
   phone_number: MyString
   address: MyString
